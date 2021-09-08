@@ -18,11 +18,10 @@ function clone(obj) {
   return tem
 }
 
-// console.log(clone([1, 2, 3, {name: 12, age: 12}]));
-for (var i = 0; i < 10; i++) {
-  (function (j) {
-    setTimeout(function () {
-      console.log(j+1)
-    }, j*1000)
-  })(i)
-}
+// console.log(clone([1, 2, 3, {name: 12, age: 12}]));    
+var foo = 1;
+  (function foo() {
+    foo = 10
+    console.log(foo);
+  }())
+console.log(foo);
