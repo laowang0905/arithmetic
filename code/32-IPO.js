@@ -107,9 +107,3 @@ const findMaximizedCapital = (k, w, profits, capital) => {
     return w;
 };
 
-console.log(findMaximizedCapital(2, 0, [1, 2, 3], [0, 1, 1]));
-console.log(findMaximizedCapital(1, 0, [1, 2, 3], [1, 1, 2]));
-console.log(findMaximizedCapital(10, 0, [1, 2, 3], [0, 1, 2]));
-console.log(findMaximizedCapital(1, 0, [1, 2, 3], [0, 1, 2]));
-
-
