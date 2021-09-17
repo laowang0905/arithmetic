@@ -12,21 +12,22 @@ var numberOfBoomerangs = function (points) {
   if (points.length < 3) return 0;
   const map = {}
   let res = 0
-  points.forEach(i => {
+  for (let i of points) {
+    console.log(i);
     map[i] = {}
-    points.forEach(j => {
+    for (let j of points) {
       if (i !== j) {
         // 计算距离
         let d = des(i, j)
         map[i][d] = (map[i][d] || 0) + 1
       }
-    })
+    }
     for (let d in map[i]) {
       if (map[i][d] >= 2) {
         res += map[i][d] * (map[i][d] - 1)
       }
     }
-  });
+  }
   return res
 };
 console.log(numberOfBoomerangs([[0, 0], [1, 0], [2, 0]]));
