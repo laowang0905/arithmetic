@@ -15,4 +15,4 @@ function insertSort(array) {
 }
 
 
-console.log(insertSort(a));; // [1, 1, 3, 3, 6, 6, 23, 34, 76, 221, 222, 45
+console.log(insertSort(a));; // [1, 1, 3, 3, 6, 6, 23, 34, 76, 221, 222, 456]
