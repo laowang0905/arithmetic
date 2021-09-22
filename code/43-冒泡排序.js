@@ -7,7 +7,7 @@ function bubbleSort(array) {
         array[j-1] = array[j]
         array[j] = tmp
       }
-    }
+    }   
     console.log(array);
   }
   return array
